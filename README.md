@@ -1,2 +1,2 @@
-# demo
+# Demo
 Demo code samples
