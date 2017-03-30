@@ -1,5 +1,5 @@
 # Proof of Code
-Code samples by me.
+Code samples by me
 
 Front-end work can be found on: 
 * https://zelfevaluatiescan.cultuur-ondernemen.nl
