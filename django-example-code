@@ -1,14 +1,11 @@
+#views.py 
+
 def send_invoice(invoice):
     """
-    Sends Adventure Tickets invoice to partner
-    @invoice: a django model Invoice instance
-    """
-    translation.activate('en')
-
-    if not invoice.partner:
-        invoice.partner = Partner.objects.get(code=invoice.partner_code)
-        invoice.save()
-
+    Sends Invoice to the invoice partner
+    """    
+    
+    # Make the email
     template        = EmailTemplate.objects.get(name='invoice-email')
     subject         = replace_invoice_vars(template.subject, invoice, 'en')
     message_plain   = replace_invoice_vars(template.plain_text, invoice, 'en')
