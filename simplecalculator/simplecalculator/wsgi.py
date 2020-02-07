@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'zaaksysteem.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'simplecalculator.settings')
 
 application = get_wsgi_application()
