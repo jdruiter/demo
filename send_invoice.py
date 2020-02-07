@@ -56,6 +56,8 @@ def send_invoice(invoice):
 
     partner_email = invoice.partner.partner_email or invoice.partner.finance_email
 
+
+    # make email
     msg = EmailMultiAlternatives(
         subject=subject,
         body=message_plain,
